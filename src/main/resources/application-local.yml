@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  compression:
+    enabled: true
+
+spring:
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+        settings:
+          web-allow-others: true
+
+logging.level:
+  org.hibernate.type.descriptor.sql.BasicBinder: TRACE
